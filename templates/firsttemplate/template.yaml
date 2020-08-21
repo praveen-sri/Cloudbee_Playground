@@ -1,9 +1,9 @@
 version: 1 
- type: pipeline-template 
+type: pipeline-template 
   
- name: omake
- description: sample-c omake
- parameters: 
+name: omake
+description: sample-c omake
+parameters: 
    - name: emailRecipient 
      type: string 
      displayName: Email address to be used for sending build notifications 
