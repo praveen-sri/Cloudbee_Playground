@@ -1,5 +1,5 @@
 version: 1 
- type: pipeline-template-catalog 
-  
- name: APCatalog 
- displayName: standardize template  
+type: pipeline-template-catalog   
+
+name: APCatalog 
+displayName: standardize template  
