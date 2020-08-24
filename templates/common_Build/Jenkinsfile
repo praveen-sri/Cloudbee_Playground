@@ -4,7 +4,7 @@ pipeline {
      stages { 
          stage('Checkout') {  
              steps {
-                 sh" checkout Project repo"
+                 sh" echo checkout Project repo"
                  git credentialsId: "${github_creds}" , url: "${project_repo}"
                  script {
                     if(${test_repo} != "None"){
