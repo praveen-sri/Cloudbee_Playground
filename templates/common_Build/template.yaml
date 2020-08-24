@@ -1,0 +1,26 @@
+version: 1 
+type: pipeline-template 
+  
+name: common build
+description: standardize builds
+parameters: 
+   - name: emailRecipient 
+     type: string 
+     displayName: Email address to be used for sending build notifications 
+   - name: project_repo 
+     type: string 
+     displayName: repo
+   - name: tools_repo_1 
+     type: string 
+     displayName: repo_1
+   - name: test_repo_2 
+     type: string 
+     displayName: repo_2     
+   - name: github_creds 
+     displayName: GitHub Credentials ID 
+     type: credentials 
+     defaultValue: github-creds-example
+   - name: custom_build
+     displayName: customise build
+     type: boolean 
+     defaultValue: false
