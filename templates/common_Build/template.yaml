@@ -13,9 +13,11 @@ parameters:
    - name: tools_repo_1 
      type: string 
      displayName: repo_1
+     defaultValue: None
    - name: test_repo_2 
      type: string 
-     displayName: repo_2     
+     displayName: repo_2
+     defaultValue: None
    - name: github_creds 
      displayName: GitHub Credentials ID 
      type: credentials 
