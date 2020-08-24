@@ -14,13 +14,15 @@ pipeline {
              } 
          } 
          stage('Build') {  
-             steps { 
-               if(${custom_build} == false){
-                 sh 'echo Hello World'
-               }
-               else{
-                 sh 'echo Hello Smart World'
-               }
+             steps {
+                  script {
+                    if(${custom_build} == false){
+                      sh 'echo Hello World'
+                    }
+                    else{
+                      sh 'echo Hello Smart World'
+                    }
+                 }
              } 
          } 
      } 
