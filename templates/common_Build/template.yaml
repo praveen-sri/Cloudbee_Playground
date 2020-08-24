@@ -10,13 +10,13 @@ parameters:
    - name: project_repo 
      type: string 
      displayName: repo
-   - name: tools_repo_1 
+   - name: tools_repo 
      type: string 
-     displayName: repo_1
+     displayName: tools_repo
      defaultValue: None
-   - name: test_repo_2 
+   - name: test_repo
      type: string 
-     displayName: repo_2
+     displayName: test_repo
      defaultValue: None
    - name: github_creds 
      displayName: GitHub Credentials ID 
