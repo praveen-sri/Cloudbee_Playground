@@ -7,7 +7,7 @@ pipeline {
                  sh" checkout Project repo"
                  git credentialsId: "${github_creds}" , url: "${project_repo}"
                  script {
-                    if(${test_repo} != None){
+                    if(${test_repo} != "None"){
                          git credentialsId: "${github_creds}" , url: "${test_repo}"
                     }
                 }
